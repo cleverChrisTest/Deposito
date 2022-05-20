@@ -19,7 +19,8 @@ public class Main {
     public static void main(String[] args) {
         operativa_cuenta(0);
     }
-
+    
+    //Comentario añadido para el ejercicio de GIT
     public static void operativa_cuenta(float cantidad) {
         // TODO code application logic here
         CCuenta cuenta1;
