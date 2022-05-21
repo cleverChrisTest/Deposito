@@ -5,11 +5,10 @@ package cuentas;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 
-
 /**
- * @description Tarea 4 de entornos de desarrollo
+ * En esta clase se  ejecutan los programas
  * @author cristian g. otazo diaz
- * @date 18/05/2022
+ * @version 18/05/2022
  */
 public class Main {
 

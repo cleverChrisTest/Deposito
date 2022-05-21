@@ -5,9 +5,8 @@ package cuentas;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-
 /**
- * CCuenta. Contiene los atributos y métodos para realizar operaciones sencillas
+ * Contiene los atributos y métodos para realizar operaciones sencillas
  * en una cuenta bancaria.
  * @author cristian g. otazo diaz
  * @version 18/05/2022
