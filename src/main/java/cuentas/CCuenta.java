@@ -7,9 +7,10 @@ package cuentas;
 
 
 /**
- * @description Tarea 4 de entornos de desarrollo
+ * CCuenta. Contiene los atributos y métodos para realizar operaciones sencillas
+ * en una cuenta bancaria.
  * @author cristian g. otazo diaz
- * @date 18/05/2022
+ * @version 18/05/2022
  */
 public class CCuenta {
     private String nombre;
@@ -17,24 +18,48 @@ public class CCuenta {
     private double saldo;
     private double tipoInteres;
 
+    /**
+     * 
+     */
     public CCuenta(){}
 
+    /**
+     *
+     * @param nom
+     * @param cue
+     * @param sal
+     * @param tipo
+     */
     public CCuenta(String nom, String cue, double sal, double tipo){
         nombre =nom;
         cuenta=cue;
         saldo=sal;
     }
 
+    /**
+     *
+     * @return
+     */
     public double estado(){
         return getSaldo();
     }
 
+    /**
+     *
+     * @param cantidad
+     * @throws Exception
+     */
     public void ingresar(double cantidad) throws Exception{
         if (cantidad<0)
             throw new Exception("No se puede ingresar una cantidad negativa");
         setSaldo(getSaldo() + cantidad);
     }
 
+    /**
+     *
+     * @param cantidad
+     * @throws Exception
+     */
     public void retirar(double cantidad) throws Exception{
         if (cantidad <= 0)
             throw new Exception ("No se puede retirar una cantidad negativa");
