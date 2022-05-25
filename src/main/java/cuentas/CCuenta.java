@@ -46,12 +46,14 @@ public class CCuenta {
     /**
      *
      * @param cantidad
-     * @throws Exception
      */
-    public void ingresar(double cantidad) throws Exception{
-        if (cantidad<0)
-            throw new Exception("No se puede ingresar una cantidad negativa");
-        setSaldo(getSaldo() + cantidad);
+    public void ingresar(double cantidad){
+        if (cantidad<0){
+            System.out.println("No se puede ingresar una cantidad negativa");
+        }
+        else{
+            setSaldo(getSaldo() + cantidad);
+        }
     }
 
     /**
@@ -59,12 +61,16 @@ public class CCuenta {
      * @param cantidad
      * @throws Exception
      */
-    public void retirar(double cantidad) throws Exception{
-        if (cantidad <= 0)
-            throw new Exception ("No se puede retirar una cantidad negativa");
-        if (estado()< cantidad)
-            throw new Exception ("No se hay suficiente saldo");
-        setSaldo(getSaldo() - cantidad);
+    public void retirar(double cantidad){
+        if (cantidad <= 0){
+            System.out.println("No se puede retirar una cantidad negativa");
+        }
+        else if (estado()< cantidad){
+            System.out.println("No se hay suficiente saldo");
+        }
+        else {
+            setSaldo(getSaldo() - cantidad);
+        }
     }
 
     /**
